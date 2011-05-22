@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9576DF1A1385946900110004 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576DF191385946900110004 /* UIKit.framework */; };
+		9576DF1C1385946900110004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576DF1B1385946900110004 /* Foundation.framework */; };
+		9576DF1E1385946900110004 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576DF1D1385946900110004 /* CoreGraphics.framework */; };
+		9576DF241385946900110004 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF221385946900110004 /* InfoPlist.strings */; };
+		9576DF271385946900110004 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9576DF261385946900110004 /* main.m */; };
+		9576DF2A1385946900110004 /* BlindTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9576DF291385946900110004 /* BlindTestAppDelegate.m */; };
+		9576DF2D1385946A00110004 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF2B1385946A00110004 /* MainWindow.xib */; };
+		9576DF361385948F00110004 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = 9576DF351385948F00110004 /* Music.m */; };
+		9576DF3B13859AC000110004 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9576DF3913859AC000110004 /* GameViewController.m */; };
+		9576DF3C13859AC000110004 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF3A13859AC000110004 /* GameViewController.xib */; };
+		9576DF4813859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF3E13859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 */; };
+		9576DF4913859B9C00110004 /* 1-18 New Soul 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF3F13859B9C00110004 /* 1-18 New Soul 1.mp3 */; };
+		9576DF4A13859B9C00110004 /* 02 Little L 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4013859B9C00110004 /* 02 Little L 1.mp3 */; };
+		9576DF4B13859B9C00110004 /* 04 Jerk It Out 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4113859B9C00110004 /* 04 Jerk It Out 1.mp3 */; };
+		9576DF4C13859B9C00110004 /* 05 I Gotta Feeling 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4213859B9C00110004 /* 05 I Gotta Feeling 1.mp3 */; };
+		9576DF4D13859B9C00110004 /* 06 A Hard Day's Night 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4313859B9C00110004 /* 06 A Hard Day's Night 1.mp3 */; };
+		9576DF4E13859B9C00110004 /* 06 Billie Jean 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4413859B9C00110004 /* 06 Billie Jean 1.mp3 */; };
+		9576DF4F13859B9C00110004 /* 07 Can't Stop 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4513859B9C00110004 /* 07 Can't Stop 1.mp3 */; };
+		9576DF5013859B9C00110004 /* 09 Technologic 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4613859B9C00110004 /* 09 Technologic 1.mp3 */; };
+		9576DF5113859B9C00110004 /* Creep 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4713859B9C00110004 /* Creep 1.mp3 */; };
+		9576DF531385A28F00110004 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576DF521385A28F00110004 /* AudioToolbox.framework */; };
+		9576DF551385A77200110004 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576DF541385A77200110004 /* AVFoundation.framework */; };
+		9576DF591385B42D00110004 /* NSMutableArray+RandomSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9576DF581385B42D00110004 /* NSMutableArray+RandomSort.m */; };
+		95818F241386E98B00A6F954 /* NSArray+RandomSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 95818F231386E98B00A6F954 /* NSArray+RandomSort.m */; };
+		95818F291386EA6B00A6F954 /* MusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 95818F281386EA6B00A6F954 /* MusicPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9576DF151385946900110004 /* BlindTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9576DF191385946900110004 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9576DF1B1385946900110004 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9576DF1D1385946900110004 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9576DF211385946900110004 /* BlindTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlindTest-Info.plist"; sourceTree = "<group>"; };
+		9576DF231385946900110004 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9576DF251385946900110004 /* BlindTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlindTest-Prefix.pch"; sourceTree = "<group>"; };
+		9576DF261385946900110004 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9576DF281385946900110004 /* BlindTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlindTestAppDelegate.h; sourceTree = "<group>"; };
+		9576DF291385946900110004 /* BlindTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlindTestAppDelegate.m; sourceTree = "<group>"; };
+		9576DF2C1385946A00110004 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		9576DF341385948F00110004 /* Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Music.h; sourceTree = "<group>"; };
+		9576DF351385948F00110004 /* Music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Music.m; sourceTree = "<group>"; };
+		9576DF3813859AC000110004 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		9576DF3913859AC000110004 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		9576DF3A13859AC000110004 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		9576DF3E13859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 California Gurls (feat. Big Snoop Dogg).mp3"; sourceTree = "<group>"; };
+		9576DF3F13859B9C00110004 /* 1-18 New Soul 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-18 New Soul 1.mp3"; sourceTree = "<group>"; };
+		9576DF4013859B9C00110004 /* 02 Little L 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 Little L 1.mp3"; sourceTree = "<group>"; };
+		9576DF4113859B9C00110004 /* 04 Jerk It Out 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 Jerk It Out 1.mp3"; sourceTree = "<group>"; };
+		9576DF4213859B9C00110004 /* 05 I Gotta Feeling 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 I Gotta Feeling 1.mp3"; sourceTree = "<group>"; };
+		9576DF4313859B9C00110004 /* 06 A Hard Day's Night 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 A Hard Day's Night 1.mp3"; sourceTree = "<group>"; };
+		9576DF4413859B9C00110004 /* 06 Billie Jean 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 Billie Jean 1.mp3"; sourceTree = "<group>"; };
+		9576DF4513859B9C00110004 /* 07 Can't Stop 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 Can't Stop 1.mp3"; sourceTree = "<group>"; };
+		9576DF4613859B9C00110004 /* 09 Technologic 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 Technologic 1.mp3"; sourceTree = "<group>"; };
+		9576DF4713859B9C00110004 /* Creep 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Creep 1.mp3"; sourceTree = "<group>"; };
+		9576DF521385A28F00110004 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9576DF541385A77200110004 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9576DF571385B42D00110004 /* NSMutableArray+RandomSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+RandomSort.h"; sourceTree = "<group>"; };
+		9576DF581385B42D00110004 /* NSMutableArray+RandomSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+RandomSort.m"; sourceTree = "<group>"; };
+		95818F221386E98B00A6F954 /* NSArray+RandomSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RandomSort.h"; sourceTree = "<group>"; };
+		95818F231386E98B00A6F954 /* NSArray+RandomSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomSort.m"; sourceTree = "<group>"; };
+		95818F271386EA6B00A6F954 /* MusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayer.h; sourceTree = "<group>"; };
+		95818F281386EA6B00A6F954 /* MusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9576DF121385946900110004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9576DF551385A77200110004 /* AVFoundation.framework in Frameworks */,
+				9576DF531385A28F00110004 /* AudioToolbox.framework in Frameworks */,
+				9576DF1A1385946900110004 /* UIKit.framework in Frameworks */,
+				9576DF1C1385946900110004 /* Foundation.framework in Frameworks */,
+				9576DF1E1385946900110004 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9576DF0A1385946900110004 = {
+			isa = PBXGroup;
+			children = (
+				9576DF1F1385946900110004 /* BlindTest */,
+				9576DF181385946900110004 /* Frameworks */,
+				9576DF161385946900110004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9576DF161385946900110004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9576DF151385946900110004 /* BlindTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9576DF181385946900110004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9576DF541385A77200110004 /* AVFoundation.framework */,
+				9576DF521385A28F00110004 /* AudioToolbox.framework */,
+				9576DF191385946900110004 /* UIKit.framework */,
+				9576DF1B1385946900110004 /* Foundation.framework */,
+				9576DF1D1385946900110004 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9576DF1F1385946900110004 /* BlindTest */ = {
+			isa = PBXGroup;
+			children = (
+				9576DF3D13859B8A00110004 /* MP3 */,
+				9576DF561385B40C00110004 /* Category */,
+				9576DF331385948000110004 /* Model */,
+				95818F261386EA5A00A6F954 /* Audio */,
+				9576DF371385997500110004 /* ViewController */,
+				9576DF281385946900110004 /* BlindTestAppDelegate.h */,
+				9576DF291385946900110004 /* BlindTestAppDelegate.m */,
+				9576DF2B1385946A00110004 /* MainWindow.xib */,
+				9576DF201385946900110004 /* Supporting Files */,
+			);
+			name = BlindTest;
+			path = BlindTest;
+			sourceTree = "<group>";
+		};
+		9576DF201385946900110004 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9576DF211385946900110004 /* BlindTest-Info.plist */,
+				9576DF221385946900110004 /* InfoPlist.strings */,
+				9576DF251385946900110004 /* BlindTest-Prefix.pch */,
+				9576DF261385946900110004 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9576DF331385948000110004 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9576DF341385948F00110004 /* Music.h */,
+				9576DF351385948F00110004 /* Music.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9576DF371385997500110004 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9576DF3813859AC000110004 /* GameViewController.h */,
+				9576DF3913859AC000110004 /* GameViewController.m */,
+				9576DF3A13859AC000110004 /* GameViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		9576DF3D13859B8A00110004 /* MP3 */ = {
+			isa = PBXGroup;
+			children = (
+				9576DF3E13859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 */,
+				9576DF3F13859B9C00110004 /* 1-18 New Soul 1.mp3 */,
+				9576DF4013859B9C00110004 /* 02 Little L 1.mp3 */,
+				9576DF4113859B9C00110004 /* 04 Jerk It Out 1.mp3 */,
+				9576DF4213859B9C00110004 /* 05 I Gotta Feeling 1.mp3 */,
+				9576DF4313859B9C00110004 /* 06 A Hard Day's Night 1.mp3 */,
+				9576DF4413859B9C00110004 /* 06 Billie Jean 1.mp3 */,
+				9576DF4513859B9C00110004 /* 07 Can't Stop 1.mp3 */,
+				9576DF4613859B9C00110004 /* 09 Technologic 1.mp3 */,
+				9576DF4713859B9C00110004 /* Creep 1.mp3 */,
+			);
+			name = MP3;
+			sourceTree = "<group>";
+		};
+		9576DF561385B40C00110004 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9576DF571385B42D00110004 /* NSMutableArray+RandomSort.h */,
+				9576DF581385B42D00110004 /* NSMutableArray+RandomSort.m */,
+				95818F221386E98B00A6F954 /* NSArray+RandomSort.h */,
+				95818F231386E98B00A6F954 /* NSArray+RandomSort.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		95818F261386EA5A00A6F954 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				95818F271386EA6B00A6F954 /* MusicPlayer.h */,
+				95818F281386EA6B00A6F954 /* MusicPlayer.m */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9576DF141385946900110004 /* BlindTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9576DF301385946A00110004 /* Build configuration list for PBXNativeTarget "BlindTest" */;
+			buildPhases = (
+				9576DF111385946900110004 /* Sources */,
+				9576DF121385946900110004 /* Frameworks */,
+				9576DF131385946900110004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlindTest;
+			productName = BlindTest;
+			productReference = 9576DF151385946900110004 /* BlindTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9576DF0C1385946900110004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Adrien Brault";
+			};
+			buildConfigurationList = 9576DF0F1385946900110004 /* Build configuration list for PBXProject "BlindTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9576DF0A1385946900110004;
+			productRefGroup = 9576DF161385946900110004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9576DF141385946900110004 /* BlindTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9576DF131385946900110004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9576DF241385946900110004 /* InfoPlist.strings in Resources */,
+				9576DF2D1385946A00110004 /* MainWindow.xib in Resources */,
+				9576DF3C13859AC000110004 /* GameViewController.xib in Resources */,
+				9576DF4813859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 in Resources */,
+				9576DF4913859B9C00110004 /* 1-18 New Soul 1.mp3 in Resources */,
+				9576DF4A13859B9C00110004 /* 02 Little L 1.mp3 in Resources */,
+				9576DF4B13859B9C00110004 /* 04 Jerk It Out 1.mp3 in Resources */,
+				9576DF4C13859B9C00110004 /* 05 I Gotta Feeling 1.mp3 in Resources */,
+				9576DF4D13859B9C00110004 /* 06 A Hard Day's Night 1.mp3 in Resources */,
+				9576DF4E13859B9C00110004 /* 06 Billie Jean 1.mp3 in Resources */,
+				9576DF4F13859B9C00110004 /* 07 Can't Stop 1.mp3 in Resources */,
+				9576DF5013859B9C00110004 /* 09 Technologic 1.mp3 in Resources */,
+				9576DF5113859B9C00110004 /* Creep 1.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9576DF111385946900110004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9576DF271385946900110004 /* main.m in Sources */,
+				9576DF2A1385946900110004 /* BlindTestAppDelegate.m in Sources */,
+				9576DF361385948F00110004 /* Music.m in Sources */,
+				9576DF3B13859AC000110004 /* GameViewController.m in Sources */,
+				9576DF591385B42D00110004 /* NSMutableArray+RandomSort.m in Sources */,
+				95818F241386E98B00A6F954 /* NSArray+RandomSort.m in Sources */,
+				95818F291386EA6B00A6F954 /* MusicPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9576DF221385946900110004 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9576DF231385946900110004 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9576DF2B1385946A00110004 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9576DF2C1385946A00110004 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9576DF2E1385946A00110004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9576DF2F1385946A00110004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		9576DF311385946A00110004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlindTest/BlindTest-Prefix.pch";
+				INFOPLIST_FILE = "BlindTest/BlindTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = BlindTest;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9576DF321385946A00110004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlindTest/BlindTest-Prefix.pch";
+				INFOPLIST_FILE = "BlindTest/BlindTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = BlindTest;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9576DF0F1385946900110004 /* Build configuration list for PBXProject "BlindTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9576DF2E1385946A00110004 /* Debug */,
+				9576DF2F1385946A00110004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9576DF301385946A00110004 /* Build configuration list for PBXNativeTarget "BlindTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9576DF311385946A00110004 /* Debug */,
+				9576DF321385946A00110004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9576DF0C1385946900110004 /* Project object */;
+}
