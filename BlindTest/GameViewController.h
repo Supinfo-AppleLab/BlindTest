@@ -22,12 +22,16 @@
     
     UITableView *_choicesTableView;
     UILabel *_scoreLabel;
+    UIProgressView *_timeLeftProgressView;
     
     NSInteger _score;
+    
+    NSTimer *_timeLeftProgressViewTimer;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *choicesTableView;
 @property (nonatomic, retain) IBOutlet UILabel *scoreLabel;
+@property (nonatomic, retain) IBOutlet UIProgressView *timeLeftProgressView;
 
 - (IBAction)nextSong;
 

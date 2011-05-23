@@ -10,6 +10,7 @@
 
 
 #define MAX_CHOICES 4
+#define PROGRESS_VIEW_UPDATE_INTERVAL 0.1
 
 
 @interface GameViewController ()
@@ -19,16 +20,26 @@
 @property (nonatomic, retain) NSMutableArray *musicChoices;
 @property (nonatomic, readonly) NSInteger maxChoices;
 @property (nonatomic, assign) NSInteger score;
+@property (nonatomic, retain) NSTimer *timeLeftProgressViewTimer;
 
 - (void)createMusicChoices;
 - (void)didChooseCorrectMusic:(BOOL)isChoiceCorrect;
+
+- (void)startTimeLeftProgressView;
+- (void)stopTimeLeftProgressView;
+- (void)timeLeftProgressViewTimerFire;
 
 @end
 
 
 @implementation GameViewController
+
+#pragma mark - IBOutlet properties
+
 @synthesize choicesTableView = _choicesTableView;
 @synthesize scoreLabel = _scoreLabel;
+@synthesize timeLeftProgressView = _timeLeftProgressView;
+
 
 #pragma mark - Properties
 
@@ -44,6 +55,8 @@
         
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", _score];
 }
+
+@synthesize timeLeftProgressViewTimer = _timeLeftProgressViewTimer;
 
 
 #pragma mark - Object lifecycle
@@ -67,6 +80,8 @@
     [_musicChoices release];
     [_choicesTableView release];
     [_scoreLabel release];
+    [_timeLeftProgressView release];
+    [_timeLeftProgressViewTimer release];
     [super dealloc];
 }
 
@@ -91,6 +106,7 @@
     self.choicesTableView.delegate = nil;
     self.choicesTableView = nil;
     self.scoreLabel = nil;
+    self.timeLeftProgressView = nil;
     [super viewDidUnload];
 }
 
@@ -103,6 +119,7 @@
     self.musicToGuess = [self.musics objectAtIndex:randomIndex];
     
     [[MusicPlayer sharedPlayer] playMusic:self.musicToGuess];
+    [self startTimeLeftProgressView];
     
     [self createMusicChoices];
     [self.choicesTableView reloadData];
@@ -132,11 +149,12 @@
 {
     self.choicesTableView.hidden = YES;
     
+    [self stopTimeLeftProgressView];
     [[MusicPlayer sharedPlayer] stop];
     
     self.score += isChoiceCorrect ? +10 : -5;
     
-    NSString *alertViewTitle = isChoiceCorrect ? @"Right!" : @"Wrong!";
+    NSString *alertViewTitle = isChoiceCorrect ? @"Won!" : @"Lose!";
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:alertViewTitle
                                                         message:nil
@@ -146,6 +164,39 @@
     [alertView show];
     [alertView release];
 }
+
+
+#pragma mark - Timer Private
+
+- (void)startTimeLeftProgressView
+{
+    [self stopTimeLeftProgressView];
+    
+    self.timeLeftProgressView.progress = 1.0;
+    
+    self.timeLeftProgressViewTimer = [NSTimer scheduledTimerWithTimeInterval:PROGRESS_VIEW_UPDATE_INTERVAL
+                                                                      target:self
+                                                                    selector:@selector(timeLeftProgressViewTimerFire)
+                                                                    userInfo:nil
+                                                                     repeats:YES];
+}
+
+- (void)stopTimeLeftProgressView
+{
+    [self.timeLeftProgressViewTimer invalidate];
+    self.timeLeftProgressViewTimer = nil;
+}
+
+- (void)timeLeftProgressViewTimerFire
+{
+    CGFloat timeInterval = 1 / (self.musicToGuess.duration / PROGRESS_VIEW_UPDATE_INTERVAL);
+    self.timeLeftProgressView.progress -= timeInterval;
+    
+    if (self.timeLeftProgressView.progress <= 0.0) {
+        [self didChooseCorrectMusic:NO];
+    }
+}
+
 
 
 #pragma mark - UITableViewDataSource
