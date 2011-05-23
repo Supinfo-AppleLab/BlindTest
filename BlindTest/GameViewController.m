@@ -104,6 +104,8 @@
             [self.musicChoices addObject:randomMusic];
         }
     }
+    
+    [self.musicChoices shuffle];
 }
 
 
