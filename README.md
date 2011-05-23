@@ -6,7 +6,7 @@ This is a simple blind test using MP3 files as audio source.
 Exercises:
 ----------
 
-The app was intented to be done in 5 parts:
+The app was intended to be done in 5 parts:
 
 * 1) Create a button that will play a song randomly when tapped.
 * 2) Display 4 music choices to the user.
