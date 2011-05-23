@@ -14,7 +14,10 @@
 
 
 @interface GameViewController : UIViewController {
-    
+    NSArray *_musics;
+    Music *_musicToGuess;
 }
+
+- (IBAction)nextSong;
 
 @end

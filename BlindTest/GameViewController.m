@@ -9,7 +9,21 @@
 #import "GameViewController.h"
 
 
+@interface GameViewController ()
+
+@property (nonatomic, readonly) NSArray *musics;
+@property (nonatomic, retain) Music *musicToGuess;
+
+@end
+
+
 @implementation GameViewController
+
+#pragma mark - Properties
+
+@synthesize musics = _musics;
+@synthesize musicToGuess = _musicToGuess;
+
 
 #pragma mark - Object lifecycle
 
@@ -17,12 +31,16 @@
 {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         self.navigationItem.title = @"Blind Test";
+        
+        _musics = [[Music loadMusicsFromBundle] retain];
     }
     return self;
 }
 
 - (void)dealloc
 {
+    [_musics release];
+    [_musicToGuess release];
     [super dealloc];
 }
 
@@ -37,6 +55,17 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+}
+
+
+#pragma mark - IBAction
+
+- (IBAction)nextSong
+{
+    NSInteger randomIndex = arc4random() % [self.musics count];
+    self.musicToGuess = [self.musics objectAtIndex:randomIndex];
+    
+    [[MusicPlayer sharedPlayer] playMusic:self.musicToGuess];
 }
 
 @end
