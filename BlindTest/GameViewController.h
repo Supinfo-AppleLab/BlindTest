@@ -13,10 +13,16 @@
 #import "MusicPlayer.h"
 
 
-@interface GameViewController : UIViewController {
+@interface GameViewController : UIViewController <UITableViewDataSource> {
     NSArray *_musics;
     Music *_musicToGuess;
+    NSMutableArray *_musicChoices;
+    
+    NSInteger _maxChoices;
+    UITableView *_choicesTableView;
 }
+
+@property (nonatomic, retain) IBOutlet UITableView *choicesTableView;
 
 - (IBAction)nextSong;
 
