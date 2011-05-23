@@ -19,7 +19,7 @@ Start the exercises:
 
 You should start at the tag Exercise_0 :
 
-    git clone https://adrienbrault@github.com/Supinfo-AppleLab-Paris/BlindTest.git
+    git clone https://github.com/Supinfo-AppleLab-Paris/BlindTest.git
     cd BlindTest
     git checkout Exercise_0
 
