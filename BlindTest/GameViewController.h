@@ -19,10 +19,15 @@
     NSMutableArray *_musicChoices;
     
     NSInteger _maxChoices;
+    
     UITableView *_choicesTableView;
+    UILabel *_scoreLabel;
+    
+    NSInteger _score;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *choicesTableView;
+@property (nonatomic, retain) IBOutlet UILabel *scoreLabel;
 
 - (IBAction)nextSong;
 

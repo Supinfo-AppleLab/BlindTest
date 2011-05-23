@@ -18,6 +18,7 @@
 @property (nonatomic, retain) Music *musicToGuess;
 @property (nonatomic, retain) NSMutableArray *musicChoices;
 @property (nonatomic, readonly) NSInteger maxChoices;
+@property (nonatomic, assign) NSInteger score;
 
 - (void)createMusicChoices;
 - (void)didChooseCorrectMusic:(BOOL)isChoiceCorrect;
@@ -27,6 +28,7 @@
 
 @implementation GameViewController
 @synthesize choicesTableView = _choicesTableView;
+@synthesize scoreLabel = _scoreLabel;
 
 #pragma mark - Properties
 
@@ -34,6 +36,14 @@
 @synthesize musicToGuess = _musicToGuess;
 @synthesize musicChoices = _musicChoices;
 @synthesize maxChoices = _maxChoices;
+@synthesize score = _score;
+
+- (void)setScore:(NSInteger)score
+{
+    _score = MAX(score, 0);
+        
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", _score];
+}
 
 
 #pragma mark - Object lifecycle
@@ -56,6 +66,7 @@
     [_musicToGuess release];
     [_musicChoices release];
     [_choicesTableView release];
+    [_scoreLabel release];
     [super dealloc];
 }
 
@@ -70,6 +81,8 @@
     self.choicesTableView.delegate = self;
     
     self.choicesTableView.hidden = YES;
+    
+    self.score = 0;
 }
 
 - (void)viewDidUnload
@@ -77,6 +90,7 @@
     self.choicesTableView.dataSource = nil;
     self.choicesTableView.delegate = nil;
     self.choicesTableView = nil;
+    self.scoreLabel = nil;
     [super viewDidUnload];
 }
 
@@ -119,6 +133,8 @@
     self.choicesTableView.hidden = YES;
     
     [[MusicPlayer sharedPlayer] stop];
+    
+    self.score += isChoiceCorrect ? +10 : -5;
     
     NSString *alertViewTitle = isChoiceCorrect ? @"Right!" : @"Wrong!";
     
