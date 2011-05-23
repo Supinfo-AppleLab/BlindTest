@@ -7,10 +7,6 @@
 //
 
 #import "GameViewController.h"
-#import "NSMutableArray+RandomSort.h"
-#import "NSArray+RandomSort.h"
-#import "Music.h"
-#import "MusicPlayer.h"
 
 
 @implementation GameViewController
