@@ -24,8 +24,8 @@ Use git & Github power:
 
 To see the changes made between each exercice:
 
-* [https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_0...Exercise_1 0 to 1]
-* [https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_1...Exercise_2 1 to 2]
-* [https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_2...Exercise_3 2 to 3]
-* [https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_3...Exercise_4 3 to 4]
-* [https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_4...Exercise_5 4 to 5]
+* [0 to 1][https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_0...Exercise_1]
+* [1 to 2][https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_1...Exercise_2]
+* [2 to 3][https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_2...Exercise_3]
+* [3 to 4][https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_3...Exercise_4]
+* [4 to 5][https://github.com/Supinfo-AppleLab-Paris/BlindTest/compare/Exercise_4...Exercise_5]
