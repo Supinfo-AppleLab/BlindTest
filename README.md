@@ -15,6 +15,7 @@ The app was presented to be done in 5 parts:
 * 5) Use a UIProgressView to show the time remaining.
 
 You should start at the tag Exercise_0 :
+
     git clone git@github.com:Supinfo-AppleLab-Paris/BlindTest.git
     cd BlindTest
     git checkout Exercise_0
