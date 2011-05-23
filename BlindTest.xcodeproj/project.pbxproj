@@ -17,16 +17,6 @@
 		9576DF361385948F00110004 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = 9576DF351385948F00110004 /* Music.m */; };
 		9576DF3B13859AC000110004 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9576DF3913859AC000110004 /* GameViewController.m */; };
 		9576DF3C13859AC000110004 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF3A13859AC000110004 /* GameViewController.xib */; };
-		9576DF4813859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF3E13859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 */; };
-		9576DF4913859B9C00110004 /* 1-18 New Soul 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF3F13859B9C00110004 /* 1-18 New Soul 1.mp3 */; };
-		9576DF4A13859B9C00110004 /* 02 Little L 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4013859B9C00110004 /* 02 Little L 1.mp3 */; };
-		9576DF4B13859B9C00110004 /* 04 Jerk It Out 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4113859B9C00110004 /* 04 Jerk It Out 1.mp3 */; };
-		9576DF4C13859B9C00110004 /* 05 I Gotta Feeling 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4213859B9C00110004 /* 05 I Gotta Feeling 1.mp3 */; };
-		9576DF4D13859B9C00110004 /* 06 A Hard Day's Night 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4313859B9C00110004 /* 06 A Hard Day's Night 1.mp3 */; };
-		9576DF4E13859B9C00110004 /* 06 Billie Jean 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4413859B9C00110004 /* 06 Billie Jean 1.mp3 */; };
-		9576DF4F13859B9C00110004 /* 07 Can't Stop 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4513859B9C00110004 /* 07 Can't Stop 1.mp3 */; };
-		9576DF5013859B9C00110004 /* 09 Technologic 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4613859B9C00110004 /* 09 Technologic 1.mp3 */; };
-		9576DF5113859B9C00110004 /* Creep 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9576DF4713859B9C00110004 /* Creep 1.mp3 */; };
 		9576DF531385A28F00110004 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576DF521385A28F00110004 /* AudioToolbox.framework */; };
 		9576DF551385A77200110004 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576DF541385A77200110004 /* AVFoundation.framework */; };
 		9576DF591385B42D00110004 /* NSMutableArray+RandomSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 9576DF581385B42D00110004 /* NSMutableArray+RandomSort.m */; };
@@ -51,16 +41,6 @@
 		9576DF3813859AC000110004 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		9576DF3913859AC000110004 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		9576DF3A13859AC000110004 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
-		9576DF3E13859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 California Gurls (feat. Big Snoop Dogg).mp3"; sourceTree = "<group>"; };
-		9576DF3F13859B9C00110004 /* 1-18 New Soul 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-18 New Soul 1.mp3"; sourceTree = "<group>"; };
-		9576DF4013859B9C00110004 /* 02 Little L 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 Little L 1.mp3"; sourceTree = "<group>"; };
-		9576DF4113859B9C00110004 /* 04 Jerk It Out 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 Jerk It Out 1.mp3"; sourceTree = "<group>"; };
-		9576DF4213859B9C00110004 /* 05 I Gotta Feeling 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 I Gotta Feeling 1.mp3"; sourceTree = "<group>"; };
-		9576DF4313859B9C00110004 /* 06 A Hard Day's Night 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 A Hard Day's Night 1.mp3"; sourceTree = "<group>"; };
-		9576DF4413859B9C00110004 /* 06 Billie Jean 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 Billie Jean 1.mp3"; sourceTree = "<group>"; };
-		9576DF4513859B9C00110004 /* 07 Can't Stop 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 Can't Stop 1.mp3"; sourceTree = "<group>"; };
-		9576DF4613859B9C00110004 /* 09 Technologic 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 Technologic 1.mp3"; sourceTree = "<group>"; };
-		9576DF4713859B9C00110004 /* Creep 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Creep 1.mp3"; sourceTree = "<group>"; };
 		9576DF521385A28F00110004 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9576DF541385A77200110004 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9576DF571385B42D00110004 /* NSMutableArray+RandomSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+RandomSort.h"; sourceTree = "<group>"; };
@@ -129,7 +109,6 @@
 				9576DF2B1385946A00110004 /* MainWindow.xib */,
 				9576DF201385946900110004 /* Supporting Files */,
 			);
-			name = BlindTest;
 			path = BlindTest;
 			sourceTree = "<group>";
 		};
@@ -166,16 +145,6 @@
 		9576DF3D13859B8A00110004 /* MP3 */ = {
 			isa = PBXGroup;
 			children = (
-				9576DF3E13859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 */,
-				9576DF3F13859B9C00110004 /* 1-18 New Soul 1.mp3 */,
-				9576DF4013859B9C00110004 /* 02 Little L 1.mp3 */,
-				9576DF4113859B9C00110004 /* 04 Jerk It Out 1.mp3 */,
-				9576DF4213859B9C00110004 /* 05 I Gotta Feeling 1.mp3 */,
-				9576DF4313859B9C00110004 /* 06 A Hard Day's Night 1.mp3 */,
-				9576DF4413859B9C00110004 /* 06 Billie Jean 1.mp3 */,
-				9576DF4513859B9C00110004 /* 07 Can't Stop 1.mp3 */,
-				9576DF4613859B9C00110004 /* 09 Technologic 1.mp3 */,
-				9576DF4713859B9C00110004 /* Creep 1.mp3 */,
 			);
 			name = MP3;
 			sourceTree = "<group>";
@@ -253,16 +222,6 @@
 				9576DF241385946900110004 /* InfoPlist.strings in Resources */,
 				9576DF2D1385946A00110004 /* MainWindow.xib in Resources */,
 				9576DF3C13859AC000110004 /* GameViewController.xib in Resources */,
-				9576DF4813859B9C00110004 /* 01 California Gurls (feat. Big Snoop Dogg).mp3 in Resources */,
-				9576DF4913859B9C00110004 /* 1-18 New Soul 1.mp3 in Resources */,
-				9576DF4A13859B9C00110004 /* 02 Little L 1.mp3 in Resources */,
-				9576DF4B13859B9C00110004 /* 04 Jerk It Out 1.mp3 in Resources */,
-				9576DF4C13859B9C00110004 /* 05 I Gotta Feeling 1.mp3 in Resources */,
-				9576DF4D13859B9C00110004 /* 06 A Hard Day's Night 1.mp3 in Resources */,
-				9576DF4E13859B9C00110004 /* 06 Billie Jean 1.mp3 in Resources */,
-				9576DF4F13859B9C00110004 /* 07 Can't Stop 1.mp3 in Resources */,
-				9576DF5013859B9C00110004 /* 09 Technologic 1.mp3 in Resources */,
-				9576DF5113859B9C00110004 /* Creep 1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
