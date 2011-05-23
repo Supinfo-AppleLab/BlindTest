@@ -20,6 +20,7 @@
 @property (nonatomic, readonly) NSInteger maxChoices;
 
 - (void)createMusicChoices;
+- (void)didChooseCorrectMusic:(BOOL)isChoiceCorrect;
 
 @end
 
@@ -66,11 +67,15 @@
     [super viewDidLoad];
     
     self.choicesTableView.dataSource = self;
+    self.choicesTableView.delegate = self;
+    
+    self.choicesTableView.hidden = YES;
 }
 
 - (void)viewDidUnload
 {
     self.choicesTableView.dataSource = nil;
+    self.choicesTableView.delegate = nil;
     self.choicesTableView = nil;
     [super viewDidUnload];
 }
@@ -87,6 +92,7 @@
     
     [self createMusicChoices];
     [self.choicesTableView reloadData];
+    self.choicesTableView.hidden = NO;
 }
 
 
@@ -108,6 +114,23 @@
     [self.musicChoices shuffle];
 }
 
+- (void)didChooseCorrectMusic:(BOOL)isChoiceCorrect
+{
+    self.choicesTableView.hidden = YES;
+    
+    [[MusicPlayer sharedPlayer] stop];
+    
+    NSString *alertViewTitle = isChoiceCorrect ? @"Right!" : @"Wrong!";
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:alertViewTitle
+                                                        message:nil
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+    [alertView show];
+    [alertView release];
+}
+
 
 #pragma mark - UITableViewDataSource
 
@@ -118,18 +141,27 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"MusicCell";
-
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier] autorelease];
     }
-
+    
     Music *cellMusic = [self.musicChoices objectAtIndex:indexPath.row];
     
     cell.textLabel.text = cellMusic.title;
     cell.detailTextLabel.text = cellMusic.artist;
-
+    
     return cell;
+}
+
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Music *selectedMusic = [self.musicChoices objectAtIndex:indexPath.row];
+    [self didChooseCorrectMusic:(selectedMusic == self.musicToGuess)];
 }
 
 @end
