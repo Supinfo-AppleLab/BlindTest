@@ -1,18 +1,21 @@
 OpenLabs iOS BlindTest
 ======================
 
-This is a simple blind test using MP3 files in the project.
+This is a simple blind test using MP3 files as audio source.
 
 Exercises:
 ----------
 
-The app was presented to be done in 5 parts:
+The app was intented to be done in 5 parts:
 
 * 1) Create a button that will play a song randomly when tapped.
-* 2) Display 4 choices to the user.
+* 2) Display 4 music choices to the user.
 * 3) Handle the user's choice.
 * 4) Add a score management.
 * 5) Use a UIProgressView to show the time remaining.
+
+Start the exercises:
+--------------------
 
 You should start at the tag Exercise_0 :
 
@@ -20,10 +23,12 @@ You should start at the tag Exercise_0 :
     cd BlindTest
     git checkout Exercise_0
 
+To be able to play musics, you have to drag ".mp3" files into the xcode project. (Should be in the MP3 group)
+
 Use git & Github power:
 -----------------------
 
-To see the changes made between each exercice:
+To see what i've done for each exercise:
 
 * [0 to 1][0]
 * [1 to 2][1]
