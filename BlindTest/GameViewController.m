@@ -10,8 +10,8 @@
 
 
 #define MAX_CHOICES 4
-#define PROGRESS_VIEW_UPDATE_INTERVAL 0.1
-
+#define PROGRESS_VIEW_UPDATE_INTERVAL 0.03
+#define MAX_TIME_TO_GUESS 30.0
 
 @interface GameViewController ()
 
@@ -189,7 +189,7 @@
 
 - (void)timeLeftProgressViewTimerFire
 {
-    CGFloat timeInterval = 1 / (self.musicToGuess.duration / PROGRESS_VIEW_UPDATE_INTERVAL);
+    CGFloat timeInterval = 1 / (MIN(self.musicToGuess.duration, MAX_TIME_TO_GUESS) / PROGRESS_VIEW_UPDATE_INTERVAL);
     self.timeLeftProgressView.progress -= timeInterval;
     
     if (self.timeLeftProgressView.progress <= 0.0) {
